@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>speedup.png</file>
+        <file>insecure.png</file>
+        <file>secure.png</file>
+        <file>customscan.png</file>
+        <file>fulvirusscan.png</file>
+        <file>targetedscan.png</file>
+        <file>close.png</file>
+        <file>minimize.png</file>
+        <file>avaxi.png</file>
+        <file>avaxilogo.png</file>
+        <file>optimize.png</file>
+        <file>settings.png</file>
+        <file>status.png</file>
+        <file>systemscan.png</file>
+    </qresource>
+</RCC>

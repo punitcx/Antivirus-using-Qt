@@ -1,0 +1,2991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainScreen</class>
+ <widget class="QMainWindow" name="mainScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>914</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>914</width>
+    <height>598</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>914</width>
+    <height>598</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Antivirus</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(220, 243, 233);
+background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame_4">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="headerFrame">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(240, 240, 240);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QCommandLinkButton" name="appIconButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>41</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+            </property>
+            <property name="text">
+             <string>Antivirus</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/avaxilogo.png</normaloff>:/avaxilogo.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>90</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="about">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Perpetua</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid lightred;
+color:black;
+}
+QToolButton
+{
+background-color:rgb(248, 165, 124);
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+color:white;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>About</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="minimizeButton">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QToolButton:hover:!pressed
+{
+	background-color: rgb(239, 255, 244);
+}
+
+QToolButton
+{
+	background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-radius: 1px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/minimize.png</normaloff>:/minimize.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="closeButton">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QToolButton:hover:!pressed
+{
+background-color: red;
+}
+
+QToolButton
+{
+background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-radius: 1px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/close.png</normaloff>:/close.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="autoRaise">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>65</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(240, 240, 240);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>13</number>
+            </property>
+            <item>
+             <widget class="QToolButton" name="statusButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="statusTip">
+               <string>Status</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton
+{
+	background-color: rgb(65, 205, 82);
+    border-width: 1px;
+    border-radius: 5px;
+}
+QToolButton:hover
+{
+	background-color :black;
+}
+QToolButton:checked
+{
+	background-color :black;
+	border:none;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/status.png</normaloff>:/status.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>48</width>
+                <height>48</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="arrowType">
+               <enum>Qt::NoArrow</enum>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup_2</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Status</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="speedUpButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="statusTip">
+               <string>Speed Up your PC</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton
+{
+	background-color: rgb(65, 205, 82);
+    border-width: 1px;
+    border-radius: 5px;
+}
+QToolButton:hover
+{
+	background-color :black;
+}
+QToolButton:checked
+{
+	background-color :black;
+	border:none;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/speedup.png</normaloff>:/speedup.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>48</width>
+                <height>48</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup_2</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Speed Up</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="optimizerButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="statusTip">
+               <string>Optimize PC</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton
+{
+	background-color: rgb(65, 205, 82);
+    border-width: 1px;
+    border-radius: 5px;
+}
+QToolButton:hover
+{
+	background-color :black;
+}
+QToolButton:checked
+{
+	background-color :black;
+	border:none;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/optimize.png</normaloff>:/optimize.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>48</width>
+                <height>48</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup_2</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Optimize</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="settingsButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="statusTip">
+               <string>Logs and Application Settings</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton
+{
+	background-color: rgb(65, 205, 82);
+    border-width: 1px;
+    border-radius: 5px;
+}
+QToolButton:hover
+{
+	background-color :black;
+}
+QToolButton:checked
+{
+	background-color :black;
+	border:none;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/settings.png</normaloff>:/settings.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>48</width>
+                <height>48</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup_2</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Settings</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="stackedDisplay">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="statusTip">
+            <string/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">/*background-color: rgb(253, 253, 253);*/
+background-color: rgb(240, 240, 240);
+background-color:white;</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page">
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QStackedWidget" name="statusDisplay">
+               <property name="styleSheet">
+                <string notr="true">/*background-color: rgb(234, 234, 234);*/</string>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="page_5">
+                <layout class="QGridLayout" name="gridLayout_9">
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_24">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>10</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Virus Definitions &lt;span style=&quot; color:#c68400;&quot;&gt;Up-to-Date&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2" rowspan="6">
+                  <spacer name="horizontalSpacer_10">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Minimum</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="6" column="0">
+                  <layout class="QGridLayout" name="gridLayout_4">
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Scan Your Entire PC</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="2">
+                    <widget class="QLabel" name="label_12">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Custom Scans</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_10">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Full Virus Scan</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="2">
+                    <widget class="QLabel" name="label_9">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Create Your Own
+Scans and Customize </string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QLabel" name="label_8">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>8</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Scan Specific 
+and External Drives</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLabel" name="label_11">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Targeted Scan</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QToolButton" name="customScan">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>130</width>
+                       <height>130</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="statusTip">
+                      <string>Add Custom Files and Folders for Scanning.</string>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QToolButton:hover:!pressed
+{
+  border: 1px solid green;
+}
+
+QToolButton
+{
+	background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-radius: 1px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="icons.qrc">
+                       <normaloff>:/customscan.png</normaloff>:/customscan.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>43</width>
+                       <height>120</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QToolButton" name="fullVirusScan">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>130</width>
+                       <height>130</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="statusTip">
+                      <string>Scans your System Drive.</string>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QToolButton:hover:!pressed
+{
+  border: 1px solid green;
+}
+
+QToolButton
+{
+	background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-radius: 1px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="icons.qrc">
+                       <normaloff>:/systemscan.png</normaloff>:/systemscan.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>48</width>
+                       <height>46</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QToolButton" name="targetedScan">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>130</width>
+                       <height>130</height>
+                      </size>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="statusTip">
+                      <string>Scan for other Internal and External Drives, Pendrives and Mobile Phones.</string>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QToolButton:hover:!pressed
+{
+  border: 1px solid green;
+}
+
+QToolButton
+{
+	background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-radius: 1px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="icons.qrc">
+                       <normaloff>:/targetedscan.png</normaloff>:/targetedscan.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>95</width>
+                       <height>95</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="5" column="0">
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Ignored</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="4" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="leftMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>12</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>12</number>
+                   </property>
+                   <item>
+                    <spacer name="horizontalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QCommandLinkButton" name="performQuickScanButton">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>10</pointsize>
+                       <weight>75</weight>
+                       <italic>false</italic>
+                       <bold>true</bold>
+                       <underline>false</underline>
+                       <strikeout>false</strikeout>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="statusTip">
+                      <string>Do a Quick Scan for threats in probable locations</string>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton:hover:!pressed
+{
+  border: 1px solid green;
+}
+QPushButton
+{
+	background-color: rgb(65, 205, 82);
+/*	background-color: rgb(119, 178, 85);*/
+    border-width: 1px;
+    border-radius: 5px;
+color: rgb(255, 255, 255);
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Perform Quick Scan</string>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QFrame" name="frame_3">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout">
+                      <item>
+                       <spacer name="horizontalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                         <enum>QSizePolicy::Expanding</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QToolButton" name="toolButton">
+                        <property name="enabled">
+                         <bool>true</bool>
+                        </property>
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>118</width>
+                          <height>118</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/secure.png</normaloff>
+                          <disabledoff>:/secure.png</disabledoff>:/secure.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>108</width>
+                          <height>108</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer_3">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                         <enum>QSizePolicy::Minimum</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <layout class="QGridLayout" name="gridLayout_3">
+                      <item row="1" column="1">
+                       <widget class="QLabel" name="lastScan">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Arial</family>
+                          <pointsize>11</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(89, 200, 78);</string>
+                        </property>
+                        <property name="text">
+                         <string>Never</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_5">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>   Last Scan: </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="0" colspan="2">
+                       <widget class="QLabel" name="statusMessage">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">/*color: rgb(89, 200, 78);*/</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::NoFrame</enum>
+                        </property>
+                        <property name="text">
+                         <string>Your Computer Is Protected</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_7">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Ignored</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="0">
+                  <spacer name="verticalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_8">
+                <layout class="QGridLayout" name="gridLayout_16">
+                 <item row="2" column="1">
+                  <spacer name="horizontalSpacer_13">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>343</width>
+                     <height>68</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="0" colspan="2">
+                  <widget class="QListView" name="scanItemsView">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QToolButton" name="selectFilesButtonn">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="statusTip">
+                    <string>Add Multiple Files for Scanning</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Add Files To Scan</string>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <property name="arrowType">
+                    <enum>Qt::UpArrow</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QToolButton" name="selectDirectoryButton">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>32</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="statusTip">
+                    <string>Add Folders for Scanning</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Add Drive or Folders</string>
+                   </property>
+                   <property name="popupMode">
+                    <enum>QToolButton::DelayedPopup</enum>
+                   </property>
+                   <property name="toolButtonStyle">
+                    <enum>Qt::ToolButtonTextUnderIcon</enum>
+                   </property>
+                   <property name="arrowType">
+                    <enum>Qt::UpArrow</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QToolButton" name="startCustomScanButton">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Segoe UI</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+	background-color: rgb(205, 255, 207);
+color:black;
+}
+QToolButton:pressed
+{
+
+	background-color: rgb(190, 255, 190);
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Start Custom Scan</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_2">
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="1" column="1" colspan="3">
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="2">
+                <widget class="QProgressBar" name="progressWinSearchHist">
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QProgressBar" name="progressClipboard">
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2">
+                <widget class="QProgressBar" name="progressUnusedFilesExt">
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QCheckBox" name="unusedFileExtensions">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Unused File Extensions</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="winExplorerSearchHistory">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>Windows Explorer Search History</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QProgressBar" name="progressStartupFiles">
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QProgressBar" name="progressRecentDocuments">
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="recentDocuments">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Recent Documents</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QCheckBox" name="startupFiles">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Startup Files</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="clipboard">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Clipboard</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="1" colspan="3">
+              <widget class="QListView" name="speedupView">
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" colspan="3">
+              <widget class="QLabel" name="label_13">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Speed Up Your PC</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Preferred</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="4" column="1">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>179</width>
+                 <height>48</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="4" column="3">
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>179</width>
+                 <height>48</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="3" column="1">
+              <widget class="QToolButton" name="speedUpSearch">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+color:black;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Search</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QToolButton" name="speedUpBoost">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+color:black;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Speed Up and Boost Memory</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_3">
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="5" column="3">
+              <widget class="QLabel" name="label_6">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Total Junk Deleted: </string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QLabel" name="junkFilesLabel">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="statusTip">
+                <string>Total junk files found</string>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="4">
+              <widget class="QLabel" name="junkSizeLabel">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>0 KB</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" colspan="6">
+              <widget class="QListView" name="junkFilesView">
+               <property name="styleSheet">
+                <string notr="true">QFrame:hover{
+	border: 1px solid rgb(66, 41, 255);
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+               <property name="viewMode">
+                <enum>QListView::ListMode</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="6">
+              <widget class="QProgressBar" name="optimizeProgressBar">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="5">
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLabel" name="label_22">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Junk Files: </string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Optimize PC</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1" colspan="5">
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <widget class="QToolButton" name="scanForJunk">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Scans for junk in temporary folders</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+color:black;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Scan for Junk</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QToolButton" name="optimize">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Delete unnecessary junk to save space</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+	background-color: rgb(205, 255, 207);
+color:black;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Optimize</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_4">
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="9" column="4">
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>Default Action For Detected Threats</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QRadioButton" name="moveToQuarantine">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Move the discovered threats to Quarantine</string>
+                  </property>
+                  <property name="text">
+                   <string>Move To Quarantine</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                  <attribute name="buttonGroup">
+                   <string notr="true">virusAction</string>
+                  </attribute>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="copyToQuarantine">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Copy the discovered threats to Quarantine</string>
+                  </property>
+                  <property name="text">
+                   <string>Copy To Quarantine</string>
+                  </property>
+                  <property name="checked">
+                   <bool>false</bool>
+                  </property>
+                  <attribute name="buttonGroup">
+                   <string notr="true">virusAction</string>
+                  </attribute>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="deleteVirus">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Delete the threats immediately</string>
+                  </property>
+                  <property name="text">
+                   <string>Delete</string>
+                  </property>
+                  <attribute name="buttonGroup">
+                   <string notr="true">virusAction</string>
+                  </attribute>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="9" column="1" colspan="2">
+              <spacer name="horizontalSpacer_11">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Preferred</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Settings</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>Directories and Files Filter</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_17">
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="label_23">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Click on restart from the top right menu to restart.</string>
+                  </property>
+                  <property name="statusTip">
+                   <string>Changes will take effect on restart, click on restart to restart.</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#5877ff;&quot;&gt;Exclude From Scanning (Restart Needed)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="2">
+                 <widget class="QTextEdit" name="excludefiles">
+                  <property name="toolTip">
+                   <string>A pattern like *.txt or *.zip will exclude text files or zip files from Scanning and a 
+pattern *ments will not scan the folders like documents, attachments, assignments etc.</string>
+                  </property>
+                  <property name="statusTip">
+                   <string>*.txt or *.zip to skip text/zip files and *ments to skip documents, attachments etc.</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTextEdit:hover
+{
+	/*background-color: rgb(255, 255, 255);*/
+}
+QFrame:hover{
+border:1px solid rgb(119, 95, 200);
+}
+
+</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Example: C:\Windows,*.txt,*.zip,*ments</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_26">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Files/Folders</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="9" column="3">
+              <widget class="QCheckBox" name="stayOnTop">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                </font>
+               </property>
+               <property name="statusTip">
+                <string>Checking this option will always keep the Antivirus window on top</string>
+               </property>
+               <property name="text">
+                <string>Window Stays on Top</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QToolButton" name="showLogs">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>124</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="statusTip">
+                <string>See Previous Reports</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton:hover:!pressed
+{
+  border: 2px solid green;
+	background-color:rgb(255, 192, 193);
+color:black;
+}
+QToolButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Show Logs</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QToolButton" name="silentMode">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="statusTip">
+                <string>Silent Mode will stop displaying alerts and popups</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton
+{
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+QToolButton:hover
+{
+	background-color: rgb(255, 197, 174);
+}
+QToolButton:checked
+{
+	background-color: rgb(255, 170, 127);
+	border:none;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Silent Mode</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" rowspan="3" colspan="4">
+              <widget class="QTextEdit" name="logViewer">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTextEdit:hover
+{
+	background-color: rgb(255, 255, 255);
+}
+QFrame:hover{
+border: 1px solid lightgreen;
+}
+
+</string>
+               </property>
+               <property name="documentTitle">
+                <string>Reports</string>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+               <property name="html">
+                <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;Reports&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QToolButton" name="toolButton_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="statusTip">
+                <string>Detect the connected External Drives and Scan them for known threats</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QToolButton
+{
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+QToolButton:hover
+{
+	background-color: rgb(255, 197, 174);
+}
+QToolButton:checked
+{
+	background-color: rgb(255, 170, 127);
+	border:none;
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Detect and Scan External Drives</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page_7">
+            <layout class="QGridLayout" name="gridLayout_14">
+             <item row="0" column="0">
+              <widget class="QGroupBox" name="scanningTab">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                 <underline>false</underline>
+                 <strikeout>false</strikeout>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="title">
+                <string>Performing Full System Scan</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_15">
+                <property name="verticalSpacing">
+                 <number>32</number>
+                </property>
+                <item row="3" column="1">
+                 <widget class="QPushButton" name="backButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="statusTip">
+                   <string>Back to Main</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton:hover:!pressed
+{
+  border: 1px solid green;
+}
+QPushButton:pressed
+{
+  background-color: lightgreen;
+}
+QPushButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Back</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="3">
+                 <layout class="QGridLayout" name="gridLayout_12">
+                  <property name="verticalSpacing">
+                   <number>22</number>
+                  </property>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_17">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>98</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>98</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Information:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_16">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>98</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>98</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Folder:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1" colspan="2">
+                   <widget class="QLabel" name="currentFolderLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>F</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1" colspan="2">
+                   <widget class="QLabel" name="currentFileLabel">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>F</string>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="0" colspan="3">
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <property name="verticalSpacing">
+                   <number>22</number>
+                  </property>
+                  <item row="1" column="0">
+                   <widget class="QProgressBar" name="scanningProgressbar">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>8</pointsize>
+                     </font>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="value">
+                     <number>0</number>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="textVisible">
+                     <bool>true</bool>
+                    </property>
+                    <property name="textDirection">
+                     <enum>QProgressBar::TopToBottom</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="scanningStatus">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Scanning...</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="2" column="0" colspan="3">
+                 <widget class="QGroupBox" name="groupBox">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <italic>false</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="title">
+                   <string>Status</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_10">
+                   <item row="0" column="0">
+                    <widget class="QFrame" name="frame_2">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>10</pointsize>
+                      </font>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Plain</enum>
+                     </property>
+                     <property name="lineWidth">
+                      <number>1</number>
+                     </property>
+                     <property name="midLineWidth">
+                      <number>0</number>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_11">
+                      <property name="horizontalSpacing">
+                       <number>6</number>
+                      </property>
+                      <property name="verticalSpacing">
+                       <number>20</number>
+                      </property>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_19">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>120</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Files Scanned: </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLabel" name="timeElapsedLabel">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>F</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QLabel" name="actionTakenLabel">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="statusTip">
+                         <string>Default action can be changed in settings</string>
+                        </property>
+                        <property name="text">
+                         <string>No Action</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_21">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>120</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Time Elapsed: </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLabel" name="threatsDetectedLabel">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <italic>false</italic>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="statusTip">
+                         <string>See detailed reports in settings.</string>
+                        </property>
+                        <property name="text">
+                         <string>0</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLabel" name="filesScannedLabel">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <italic>false</italic>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="statusTip">
+                         <string>Total files Scanned</string>
+                        </property>
+                        <property name="text">
+                         <string>0</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_20">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>120</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <italic>true</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Threats Detected: </string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="label_18">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>17</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>10</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Default Action: </string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QPushButton" name="stopScanButton">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="statusTip">
+                   <string>Abort Scan</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton:hover:!pressed
+{
+  border: 1px solid red;
+background-color:rgb(243, 98, 14);
+color:white;
+
+}
+QPushButton
+{
+background-color: white;
+    border-width: 1px;
+    border-radius: 5px;
+border: 1px solid grey;
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Stop The Scan</string>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <spacer name="horizontalSpacer_14">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Maximum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>368</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="virusAction"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
